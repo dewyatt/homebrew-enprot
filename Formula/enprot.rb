@@ -7,6 +7,7 @@ class Enprot < Formula
   head "https://github.com/dewyatt/enprot.git"
 
   depends_on "rust" => :build
+  depends_on "botan"
 
   def install
     system "cargo", "install", *std_cargo_args

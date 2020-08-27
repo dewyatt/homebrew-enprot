@@ -12,8 +12,6 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Install dependencies
-      run: brew install botan
     - name: Build the formula
       run: brew install --build-bottle ${FORMULA}
     - name: Test the formula
